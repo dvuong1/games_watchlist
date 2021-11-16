@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from django.views import generic
+from django.views.generic import TemplateView
 
-def home(request):
-    context = {
-        
-    }
+class HomeView(TemplateView):
+    template_name = 'homepage/blank.html'
     
-    return render(request, 'homepage/blank.html', context)
+class LoginView(TemplateView):
+    template_name = 'homepage/login.html'
