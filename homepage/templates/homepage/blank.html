@@ -1,0 +1,70 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+
+{% block title %}Watchlist - Home{% endblock %}
+
+{% block content %}
+    <div class="text-dark bg-dark text-secondary px-4 py-5 text-center mb-5" style="background: rgb(58, 59, 69);margin-bottom: 0px;">
+        <h1 class="display-5 fw-bold text-white" style="font-family: 'Source Sans Pro', sans-serif;font-weight: bold;">watchlist.games<br></h1>
+        <p class="fs-5 mb-5" style="color: var(--bs-white);">Finding you the best digital video game prices.<br></p>
+        <div style="padding-top: 0px;padding-bottom: 8px;">
+            <section class="features-boxed" style="background: var(--bs-gray-900);">
+                <div class="container" style="background: #3a3b45;">
+                    <h1 style="color: var(--bs-white);">About The Developers</h1>
+                    <p class="fs-5 mb-5" style="color: var(--bs-white);">We're a duo of passionate and fun software and web developers who launched a video game pricing watchlist to ensure you get the best prices from our evolving database from common online shops where most people purchase digital games.</p>
+                    <div class="intro"></div>
+                    <h1 style="color: var(--bs-white);">Video Game Platforms We Track/Plan To Track</h1>
+                    <div class="row justify-content-center features mb-5" style="padding: 4px 0px;">
+                        <div class="col-sm-6 col-md-5 col-lg-4 d-flex item">
+                            <div class="box" style="margin-bottom: 0px;"><img style="margin-bottom: 35px;margin-top: 20px;height: 60px;" src="{% static 'homepage/img/steam.svg' %}">
+                                <h3 class="name">Steam</h3>
+                                <p class="description">Just Released! Check out the database now for the latest deals from Steam!</p><a class="learn-more" href="#">Learn more »</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 d-flex item">
+                            <div class="box" style="margin-bottom: 0px;"><img style="margin-bottom: 35px;margin-top: 20px;height: 60px;" src="{% static 'homepage/img/switch.svg' %}">
+                                <h3 class="name">Nintendo eShop</h3>
+                                <p class="description">Watchlist in progress! <br>See updates on the news tab to keep up to date with us!</p><a class="learn-more" href="#">Learn more »</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 d-flex item">
+                            <div class="box" style="margin-bottom: 0px;"><img style="margin-bottom: 35px;margin-top: 20px;height: 60px;" src="{% static 'homepage/img/playstation.svg' %}">
+                                <h3 class="name">PlayStation Store</h3>
+                                <p class="description">Watchlist in progress!&nbsp;<br>See updates on the news tab to keep up to date with us!<br></p><a class="learn-more" href="#">Learn more »</a>
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                    </div>
+                </div>
+            </section>
+            <h1 style="color: var(--bs-white);">Watchlist News</h1>
+            <section class="features-boxed" style="background: var(--bs-gray-900);">
+                <div class="container" style="background: #3a3b45;">
+                    <div class="intro"></div>
+                    <div class="row justify-content-center features mb-5" style="background: #3a3b45;padding-top: 4px;padding-bottom: 4px;">
+                        <div class="col-sm-6 col-md-5 col-lg-4 d-flex item">
+                            <div class="box" style="margin-bottom: 0px;"><i class="fa fa-map-marker icon"></i>
+                                <h3 class="name">Upcoming Platforms</h3>
+                                <p class="description">We are planning on rolling out the website databases for the Nintendo eShop and PlayStation Store by the end of the year. Stay tuned!</p><a class="learn-more" href="#">Learn more »</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 d-flex item">
+                            <div class="box" style="margin-bottom: 0px;"><i class="fa fa-clock-o icon"></i>
+                                <h3 class="name">Website Updates</h3>
+                                <p class="description">The watchlist will be updated once a week as the new pricing and deals come out. Make sure to visit on Sundays to view the deals!</p><a class="learn-more" href="#">Learn more »</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 d-flex item">
+                            <div class="box" style="margin-bottom: 0px;"><i class="fa fa-list-alt icon"></i>
+                                <h3 class="name">Ratings</h3>
+                                <p class="description">Games will be able to be rated when implemented in the upcoming year. Stay tuned!<br></p><a class="learn-more" href="#">Learn more »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h1 style="color: var(--bs-white);">Contact Us</h1><button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" type="button">Watchlist.games@gmail.com</button>
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+    </div>
+{% endblock %}
