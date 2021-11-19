@@ -1,7 +1,11 @@
 {% extends 'homepage/base.html' %}
 {% load static %}
 
+<!-- Set page title -->
 {% block title %}Watchlist - Home{% endblock %}
+
+<!-- Make the specific nav item active (nav-<page_name>) -->
+{% block nav-about %}active{% endblock %}
 
 {% block content %}
     <div class="text-dark bg-dark text-secondary px-4 py-5 text-center mb-5" style="background: rgb(58, 59, 69);margin-bottom: 0px;">
