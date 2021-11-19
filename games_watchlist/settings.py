@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import json
+from django.contrib.messages import constants as messages
 
 CONFIG_FILE = "/etc/config.json"
 
@@ -130,3 +131,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Allows the error message tag to use Bootstrap
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
+}
