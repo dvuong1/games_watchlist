@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{% static 'homepage/css/Features-Boxed.css' %}">
     <link rel="stylesheet" href="{% static 'homepage/css/Pretty-Footer.css' %}">
     <link rel="stylesheet" href="{% static 'homepage/css/simple-footer.css' %}">
-    <link rel="stylesheet" href="{% static 'homepage/css/colors.css' %}">
+    <link rel="stylesheet" href="{% static 'homepage/css/main.css' %}">
 </head>
 
 <body id="page-top">
@@ -134,6 +134,15 @@
                         </ul>
                     </div>
                 </nav>
+
+                <!-- Display messages if they exist -->
+                <div class="container-fluid p-0">
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
 
                 {% block content %}
                     <h2>There's nothing here...</h2>
